@@ -1,0 +1,59 @@
+:root {
+    --base: #FFC600;
+    --spacing: 1rem;
+    --blur: 1rem;
+}
+
+* {
+    /* Include padding and border in total width and height of elements */
+    box-sizing: border-box; 
+    /* Remove padding, border & margin from all elements */
+    padding: 0;
+    border: 0;
+    margin: 0;   
+}
+
+html {
+    /* Reduce font size for the document to 10px (Assuming browser is set to have a medium text size) */
+    font-size: 62.5%;
+    text-align: center;
+}
+
+/* Set font size of headings in em */
+h1 { font-size: 2.4rem; } /* 24px */
+h2 { font-size: 2.2rem; } /* 22px */
+h3 { font-size: 2.0rem; } /* 20px */
+h4 { font-size: 1.8rem; } /* 18px */
+h5 { font-size: 1.6rem; } /* 16px */
+h6 { font-size: 1.4rem; } /* 14px */
+p { font-size: 1.2rem; }  /* 12px */
+
+body {
+    background: #193549;
+    color: #FAEBD7;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+body h2 {
+    font-size: 5rem;
+}
+
+.controls {
+    margin: 5rem 0;
+}
+
+input {
+    width: 10rem;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+.hl {
+    color: var(--base);
+}
